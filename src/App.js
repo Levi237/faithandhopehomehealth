@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { Routes, Route }    from 'react-router-dom';
+import * as routes          from './constants/routes';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Header               from './Header';
+import Footer               from './Footer';
 
-export default App;
+import HomePage             from './pages/home';
+import ContactPage          from './pages/contact';
+import EmailConfirmPage     from './pages/contact/EmailConfirmPage';
+
+export default class App extends Component {
+  render (){
+    return (
+      <>
+        <Header />
+
+        <Routes>
+          <Route path={routes.HOME} exact element={<>
+            <HomePage />
+          </>}></Route>
+          <Route path={routes.MAIL} exact element={<>
+            <ContactPage />
+          </>}></Route>
+          <Route path={routes.DONE} exact element={<>
+            <EmailConfirmPage />
+          </>}></Route>
+        </Routes>
+        
+        <Footer />
+      </>
+    );
+  };
+};
