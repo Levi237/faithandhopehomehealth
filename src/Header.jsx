@@ -11,7 +11,7 @@ const Header = () => {
                 <Nav />
             </section>
             <section className="header-right">
-                Phone Number
+                818.290.3768
             </section>
         </header>
     );
