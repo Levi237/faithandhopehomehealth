@@ -1,7 +1,7 @@
 /* Home Hero Style */
 .hero-section {
     /* height: calc(100dvh - 83px); */
-    max-height: 768px;
+    max-height: calc(768px - 83px);
     overflow: hidden;
 }
 .hero-section > div,
@@ -27,10 +27,11 @@
     font-size: 2vw;
     font-weight: 300;
 }
-.hero-info {
+.home-page .hero-info {
     position: absolute;
     height: 100%;
     width: 50%;
+    max-height: calc(768px - 83px);
     top: 0;
     left: 0;
     display: flex;
@@ -38,8 +39,24 @@
     align-items: center;
 
 }
+.home-page > section > div + div {
+    margin-top: 40px;
+}
+
+.services-page .hero-info {
+    position: absolute;
+    height: 100%;
+    max-height: calc(768px - 83px);
+    width: 50%;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .hero-info .spacer {
-height: 10vw;
+    height: 10vw;
+    max-height: 80px;
 }
 .hero-info > div {
     color: #FFF;
@@ -100,8 +117,57 @@ height: 10vw;
     }
 }
 .services-section .button-box {
-    height: 120px;
+    padding: 40px 0 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.services-page .icon {
+    height: 80px;
+    width: 80px;
+    margin-right: 20px;
+}
+
+.services-page .bullet-points-section > div.box-info  {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    /* margin-top: 40px; */
+}
+.services-page .bullet-points-section > div > section:first-of-type {
+    flex-grow: 0;
+}
+.services-page .bullet-points-section ul {
+    padding-inline-start: 0px;
+}   
+
+.services-page .bullet-points-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+    column-gap: 16px;
+}
+.services-page .bullet-points-section .box-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+@media (min-width: 740px){
+    .services-page .bullet-points-section .top-image {
+        display: none;
+    }
+}
+@media (max-width: 739px){
+    .services-page .bullet-points-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 32px;
+        column-gap: 16px;
+    }
+    .services-page .bullet-points-section .box-image {
+        display: none;
+    }
+    .services-page .top-image {
+        margin-top: 80px;
+    }
 }
