@@ -1,20 +1,59 @@
-.header {
-    line-height: 100%;
-    padding-bottom: 1em;
+/* Home Hero Style */
+.hero-section {
+    /* height: calc(100dvh - 83px); */
+    max-height: 46vw;
+    overflow: hidden;
 }
-.header small {
-font-weight: 300;
-font-size: clamp(16px, .45em, 24px);
-display: block;
-line-height: 120%;
+.hero-section > div,
+.hero-section > div > section ,
+.hero-section > div > section > div  { 
+    height: 100%;
+    position: relative;
 }
+
+.hero-section img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.hero-section h1 {
+    font-size: 5vw;
+}
+.hero-section h4 {
+    font-size: 2.5vw;
+    font-weight: 400;
+}
+.hero-section .text-io {
+    font-size: 2vw;
+    font-weight: 300;
+}
+.hero-info {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero-info .spacer {
+height: 10vw;
+}
+.hero-info > div {
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+}
+
 .contact-page > section,
 .home-page > section {
-    padding: 4rem 0;
+    padding: 30px 0;
     position: relative;
 }
 .home-page > section:first-of-type {
-    padding: 2rem 0 4rem;
+    padding: 0 0 30px;
 }
 
 /* Services Section */
@@ -25,3 +64,39 @@ line-height: 120%;
     width: 60%;
     margin-bottom: 20px;
 }
+@media (max-width: 900px){
+    .services-section h4 {
+        font-size: 16px;
+    }
+    .services-section img {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 740px){
+    .services-section img {
+        width: 120px;
+        margin-bottom: 5vw;
+    }
+    .services-section h4 {
+        font-size: 24px;
+    }
+    .services-section .five-col {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 'one' 'two' 'three' 'four' 'five';
+        gap: 16px;
+    }
+}
+@media (max-width: 540px){
+    .services-section img {
+        width: 40vw;
+        margin-bottom: 5vw;
+    }
+    .services-section h4 {
+        font-size: 6vw;
+    }
+    .services-section .five-col {
+        gap: 2vw;
+    }
+}
+

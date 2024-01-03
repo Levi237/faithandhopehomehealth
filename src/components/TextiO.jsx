@@ -1,8 +1,8 @@
 // This Snippet was created to wrap about it's child allowing for a fade-in once effect when scrolling into view.
-import './TextiO.css';
+import './TextIo.css';
 import React, { useEffect, useRef } from 'react';
 
-const TextiO = (props) => {
+const TextIo = (props) => {
 
     const ref = useRef();
     useEffect(() => {
@@ -25,4 +25,4 @@ const TextiO = (props) => {
     );
 };
 
-export default TextiO;
+export default TextIo;

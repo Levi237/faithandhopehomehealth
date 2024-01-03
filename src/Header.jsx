@@ -5,7 +5,11 @@ const Header = () => {
     return(
         <header>
             <section className="header-left">
-                Logo
+                <img width="40" height="40" src="faithandhope_logo_outline.png" alt="Faith and Hope Home Health Logo Icon"/>
+                <div>
+                    <h3>Faith & Hope</h3>
+                    <h5>Home Health, Inc.</h5>
+                </div>
             </section>
             <section className="header-mid">
                 <Nav />

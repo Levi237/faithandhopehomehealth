@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return(
         <footer>
-            <div className="grid three-col">
+            <div className="grid three-col mobile-one-col">
             <section className="left">
                 <div>
                     <b>Hours of Operation</b>
@@ -13,7 +13,7 @@ const Footer = () => {
                 <div>
                     <b>Available on-Call:</b>
                     <br/>
-                    24hours a day/7days a week
+                    24 hours a day&emsp;|&emsp;7 days a week
                 </div>
                 <div>
                     Tel: 818.290.3768 Fax: 818.616.3078

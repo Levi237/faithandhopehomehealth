@@ -4,9 +4,11 @@
   --font-fancy: 'Roboto Slab', courier;
   --font-body: 'Roboto', sans-serif;
 
-  --color-hex-theme: #003287;
-  --color-hsl-theme: 218, 100%, 26%;
-  --color-hex-lightgrey: #9A9A9A;
+  --color-hex-theme: #416fb4;
+  --color-hsl-theme: 216, 47%, 48%;
+  /* --color-hex-theme: #003287;
+  --color-hsl-theme: 218, 100%, 26%; */
+  --color-hex-lightgrey: #492c2c;
   --color-hsl-lightgrey: 0, 0%, 85%;;
   --color-hex-grey: #606060;
   --color-hsl-grey: 0, 0%, 38%;
@@ -90,7 +92,7 @@ header {
 
   display: grid;
   grid-template-areas: 'left mid right';
-  grid-template-columns: 140px 1fr 140px;
+  grid-template-columns: 220px 1fr 220px;
   justify-content: center;
   background-color: var(--color-hex-theme);
   color: #FFF;
@@ -99,7 +101,11 @@ header {
 header > section {
   display: flex;
 }
-
+.header img {
+  --dim: 60px;
+  height: var(--dim);
+  width: var(--dim);
+}
 .header-left {
   grid-area: left;
 }
@@ -113,11 +119,14 @@ header > section {
 @media (max-width: 639px){
   header {
     grid-template-areas: 'left right' 'mid mid';
-    grid-template-columns: 52px 1fr;
+    grid-template-columns: 190px 1fr;
     padding: 12px 16px;
     align-items: start;
     gap: 8px;
     /* justify-content: start; */
+  }
+  .header img {
+    --dim: 42px;
   }
 }
 
@@ -140,6 +149,7 @@ header nav {
     margin-left: 2rem;
   }
 }
+
 nav a {
   text-decoration: none;
   color: #FFF;
@@ -189,8 +199,9 @@ footer {
   grid-template-areas: 'left right';
 }
 .five-col {
-  grid-template-columns: repeat(5, 20%);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-areas: 'one two three four five';
+  gap: 16px;
 }
 .three-col {
   grid-template-columns: 1fr 1fr 1fr;
@@ -272,4 +283,28 @@ button {
   border: 1px solid black;;
   background: transparent;
   cursor: pointer;
+}
+
+.header {
+  line-height: 100%;
+  padding-bottom: 1em;
+}
+.header small {
+  font-weight: 300;
+  font-size: clamp(16px, .45em, 24px);
+  display: block;
+  line-height: 120%;
+}
+
+.section-container {
+  --padding: 60px;
+  /* width: calc(var(--page-width) + var(--padding)); */
+  width: calc(var(--page-width));
+  padding: var(--padding);
+  margin: 0 auto;
+background-image: linear-gradient(0deg, #003287 0%, #4170B6 100%);
+}
+.inverse {
+  color: #FFF;
+  background-color: var(--color-hex-theme);
 }
