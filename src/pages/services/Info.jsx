@@ -17,7 +17,7 @@ const Info = () => {
     }, []);
 
     return(
-        <section ref={ref} className=" hide-item item page-width">
+        <section ref={ref} className="page-width">
             <div>
                 <TextIo><h3>CERTIFIED HOME HEALTH AIDE SERVICES INCLUDE:</h3></TextIo>
             <br/>

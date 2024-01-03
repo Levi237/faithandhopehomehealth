@@ -16,7 +16,9 @@ const Footer = () => {
                     24 hours a day&emsp;|&emsp;7 days a week
                 </div>
                 <div>
-                    Tel: 818.290.3768 Fax: 818.616.3078
+                    Tel: 818.290.3768
+                    <br/>
+                    Fax: 818.616.3078
                 </div>
                 <div>
                     5435 Balboa BIvd.

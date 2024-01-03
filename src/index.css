@@ -4,9 +4,11 @@
   --font-fancy: 'Roboto Slab', courier;
   --font-body: 'Roboto', sans-serif;
 
-  --color-hex-theme: #416fb4;
-  --color-hsl-theme: 216, 47%, 48%;
-  /* --color-hex-theme: #003287;
+  --color-hex-theme-light: #416fb4;
+  --color-hsl-theme-light: 216, 47%, 48%;
+  --color-hex-theme-dark: #003287;
+  --color-hsl-theme-dark: 218, 100%, 26%;
+  /* --color-hex-theme-light: #003287;
   --color-hsl-theme: 218, 100%, 26%; */
   --color-hex-lightgrey: #492c2c;
   --color-hsl-lightgrey: 0, 0%, 85%;;
@@ -79,7 +81,7 @@ a:visited {
 }
 a:hover {
   color: var(--color-hex-grey);
-  border-bottom: 1px solid var(--color-hex-theme);
+  border-bottom: 1px solid var(--color-hex-theme-light);
 }
 
 /* Header Style */
@@ -94,7 +96,7 @@ header {
   grid-template-areas: 'left mid right';
   grid-template-columns: 220px 1fr 220px;
   justify-content: center;
-  background-color: var(--color-hex-theme);
+  background-color: var(--color-hex-theme-light);
   color: #FFF;
 }
 
@@ -165,9 +167,10 @@ nav .active {
 
 /* Footer Style */
 footer {
-  background: var(--color-hex-theme);
+  background-image: linear-gradient(180deg, var(--color-hex-theme-dark), var(--color-hex-theme-dark));
   color: #FFF;
   padding: 40px!important;
+  margin-top: 40px;
 }
 
 
@@ -181,7 +184,20 @@ footer {
   max-width: var(--page-width);
   margin: 0 auto;
 }
-
+input[type=submit],
+button, .button {
+  background-image: linear-gradient(180deg, var(--color-hex-theme-light), var(--color-hex-theme-dark));
+  padding: 16px 64px;
+  color: #FFF!important;
+  border: none!important;
+  box-shadow: 2px 2px 2px rgba(36,36,36,.5);
+  transition: box-shadow .3s ease;
+  vertical-align: middle;
+}
+button:hover.active,
+.button:hover {
+box-shadow: 4px 4px 4px rgba(36,36,36,.5);
+}
 
 
 
@@ -263,7 +279,7 @@ input[type=submit] {
   line-height: 100%;
   text-transform: uppercase;
   border-radius: 0;
-  height: 39px;
+  height: 50px!important;
   border: #181717 solid 1px;
   position: relative;
   z-index: 900;
@@ -306,5 +322,5 @@ background-image: linear-gradient(0deg, #003287 0%, #4170B6 100%);
 }
 .inverse {
   color: #FFF;
-  background-color: var(--color-hex-theme);
+  background-color: var(--color-hex-theme-light);
 }

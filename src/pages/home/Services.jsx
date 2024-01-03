@@ -1,5 +1,7 @@
 import React            from 'react';
+import { Link }         from 'react-router-dom';
 import TextIo           from '../../components/TextIo';
+import * as routes      from '../../constants/routes';
 const Services = () => {
 
     return(
@@ -25,6 +27,9 @@ const Services = () => {
                     <img src="icons/care.png" alt="MEDICAL & SOCIAL CARE"/>
                     <TextIo><h4>MEDICAL &<br/>SOCIAL CARE</h4></TextIo>
                 </section>
+            </div>
+            <div className="button-box">
+                <Link className="button" to={routes.SERV}>Learn More</Link>
             </div>
         </section>
     );
