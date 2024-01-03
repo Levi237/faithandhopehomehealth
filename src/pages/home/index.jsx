@@ -1,11 +1,10 @@
 import React, { Component }     from 'react';
 import '../pages.css';
 
-import Info                    from './Info';
+import Services                 from './Services';
 import Hero                     from './Hero';
 import Intro                    from './Intro';
-import Services                 from './Services';
-import Assessments                 from './Assessments';
+import Assessments              from './Assessments';
 
 export default class HomePage extends Component {
     render(){
@@ -15,7 +14,6 @@ export default class HomePage extends Component {
                 <Assessments />
                 <Intro />
                 <Services />
-                <Info />
             </div>
         );
     };

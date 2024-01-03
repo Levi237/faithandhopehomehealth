@@ -8,6 +8,7 @@ import Footer               from './Footer';
 import HomePage             from './pages/home';
 import ContactPage          from './pages/contact';
 import EmailConfirmPage     from './pages/contact/EmailConfirmPage';
+import ServicesPage             from './pages/services';
 
 export default class App extends Component {
   render (){
@@ -21,6 +22,9 @@ export default class App extends Component {
           </>}></Route>
           <Route path={routes.MAIL} exact element={<>
             <ContactPage />
+          </>}></Route>
+          <Route path={routes.SERV} exact element={<>
+            <ServicesPage />
           </>}></Route>
           <Route path={routes.DONE} exact element={<>
             <EmailConfirmPage />
