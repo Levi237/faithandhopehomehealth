@@ -70,7 +70,8 @@ const Info = () => {
                         <ul>
                             <li>Complete personal care</li>
                             <li>Exercise and ambulation</li>
-                            <li>Light house keeping essential to health care at home</li>
+                            <li>Light house keeping</li>
+                            (Essential to health care at home)
                             <li>Vital sign assessment</li>
                         </ul>
                     </section>

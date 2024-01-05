@@ -9,7 +9,7 @@ const Assessments = () => {
                 <h5>[ INCLUDE BUT ARE NOT LIMITED TO ]</h5>
                 <br/>
                 <div className="">
-                    <div className="grid two-col">
+                    <div className="grid two-col mobile-one-col">
                     <ul>
                         <li>Education on disease processes</li>
                         <li>Medication supervision</li>

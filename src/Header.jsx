@@ -1,5 +1,6 @@
-import React    from 'react';
-import Nav      from './Nav';
+import React        from 'react';
+import Nav          from './Nav';
+import NavMenu      from './components/nav/NavMenu';
 
 const Header = () => {
     return(
@@ -15,7 +16,8 @@ const Header = () => {
                 <Nav />
             </section>
             <section className="header-right">
-                818.290.3768
+                <h3 className="phone-number">818.290.3768</h3>
+                <NavMenu />
             </section>
         </header>
     );

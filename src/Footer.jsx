@@ -3,48 +3,60 @@ import React from 'react';
 const Footer = () => {
     return(
         <footer>
-            <div className="grid three-col mobile-one-col">
-            <section className="left">
-                <div>
-                    <b>Hours of Operation</b>
-                    <br/>
-                    9:00am-5:00pm
-                </div>
-                <div>
-                    <b>Available on-Call:</b>
-                    <br/>
-                    24 hours a day&emsp;|&emsp;7 days a week
-                </div>
-                <div>
-                    Tel: 818.290.3768
-                    <br/>
-                    Fax: 818.616.3078
-                </div>
-                <div>
-                    5435 Balboa BIvd.
-                    <br/>
-                    Suite 110 Encino,
-                    <br/>CA 91316 
-                </div>
-                <div>
-                    E-mail: fhhhealth@gmail.com
-                </div>
-                </section>
-                <section className="mid"></section>
-                <section className="right">
+            <div className="grid three-col">
+                <section className="left">
                     <div>
-                        <h3>JOINT COMMISSION INTERNATIONAL</h3>
-                        <h3>QUALITY APPROVAL</h3>
-                        <p>
-                            Pursuant Title VI of the Civil Right Act of 1964,
-                            Section 504 of the Rehabilitation Act of 1973,
-                            and the Age Discrimination Act of 1975,
-                            Faith & Hope Home Health Care, Inc. does not
-                            discriminate ni the employment of staff or provision
-                            of service on the basis of race, color, genetics,
-                            handicap, age, religious or sexual preferences.
-                        </p>
+                        <div data-contact-info="address">
+                            <section>
+                                <h3>ADDRESS:</h3>
+                            </section>
+                            5435 Balboa Blvd.
+                            <br/>
+                            Suite 110 
+                            <br/>Encino, CA 91316 
+                        </div>
+                        <div data-contact-info="email">
+                            <section>
+                            <h3>E-MAIL: </h3>
+                            </section>
+                            <section>
+                            fhhhealth@gmail.com
+                            </section>
+                        </div>
+                        <div data-contact-info="phone">
+                            <section><h3>PHONE:</h3></section>
+                            <section>
+                                818.290.3768
+                            </section>
+                        </div>
+                        <div data-contact-info="fax">
+                            <section>
+                                <h3>FAX: </h3>
+                                </section>
+                                <section>
+                                818.616.3078
+                            </section>
+                        </div>
                     </div>
+                </section>
+                <section className="center">
+                    <center>
+                    <div data-contact-info="hours">
+                        <section><h2>Hours of Operation</h2></section>
+                        <section>
+                        9:00am - 5:00pm
+                        </section>
+                    </div>
+                    <br/>
+                    <div data-contact-info="oncall">
+                        <section><h2>Available <span style={{style: 'inline-block'}}>On-Call</span></h2></section>
+                        <section>
+                        24 hours a day&emsp;|&emsp;7 days a week
+                        </section>
+                    </div></center>
+                </section>
+                <section className="right">
+
                 </section>
             </div>
         </footer>

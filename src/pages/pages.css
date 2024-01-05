@@ -1,3 +1,28 @@
+.contact-page div[data-contact-info="phone"] {
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-page div[data-contact-info="phone"] svg  {
+    height: 18px;
+    width: 18px;
+    margin-right: 8px;
+    fill: #fff;
+}
+.contact-page div[data-contact-info="phone"] h4  {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+    border-radius: 100px;
+}
+.contact-page div[data-contact-info="oncall"] {
+    margin-top: 1rem;
+}
+.contact-page div[data-contact-info="hours"],
+.contact-page div[data-contact-info="oncall"] {
+    text-align: right;
+}
 /* Home Hero Style */
 .hero-section {
     /* height: calc(100dvh - 83px); */
@@ -79,7 +104,15 @@
 }
 .services-section img {
     width: 60%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    display: block;
+    margin: 0 auto
+}
+.services-section img:first-of-type {
+    margin-bottom: 10px;
+}
+.services-section img.mobile-only {
+    margin-top: 20px;
 }
 @media (max-width: 900px){
     .services-section h4 {
@@ -91,6 +124,17 @@
     }
 }
 @media (max-width: 740px){
+    .hero-section h1 {
+        font-size: 7vw;
+    }
+    .hero-section h4 {
+        font-size: 3.5vw;
+        font-weight: 400;
+    }
+    .hero-section .text-io {
+        font-size: 3vw;
+        font-weight: 300;
+    }
     .services-section img {
         width: 120px;
         margin-bottom: 5vw;
@@ -110,7 +154,8 @@
         margin-bottom: 5vw;
     }
     .services-section h4 {
-        font-size: 6vw;
+        font-size: 8vw;
+        margin-bottom: 32px;
     }
     .services-section .five-col {
         gap: 2vw;
@@ -156,6 +201,7 @@
     .services-page .bullet-points-section .top-image {
         display: none;
     }
+
 }
 @media (max-width: 739px){
     .services-page .bullet-points-section {
@@ -169,5 +215,8 @@
     }
     .services-page .top-image {
         margin-top: 80px;
+    }
+    .services-page .bullet-points-section ul {
+        margin-left: -64px;
     }
 }

@@ -11,9 +11,9 @@ export default class HomePage extends Component {
         return (
             <div className="home-page page-wrapper">
                 <Hero />
-                <Assessments />
                 <Intro />
-                <Services />
+                <Assessments />
+                <Services scrollToTop={this.props.scrollToTop} />
             </div>
         );
     };
