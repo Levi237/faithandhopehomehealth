@@ -22,12 +22,15 @@
 @media (min-width: 740px){ .mobile-only { display: none!important; } }
 @media (max-width: 739px){ .desktop-only { display: none!important; } }
 
+html {
+  font-size: 18px;
+}
+
 body {
   margin: 0;
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 18px;
 }
 
 code {
@@ -215,8 +218,11 @@ button:hover.active,
 box-shadow: 4px 4px 4px rgba(36,36,36,.5);
 }
 
-
-
+ul.ul-two-col {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
 
 /* Grid template */
 .grid {
@@ -366,14 +372,17 @@ button {
 
 
 /* Scroll into view facde-in effect whe hide-item is removed */
-.see-item {
+.ref.see-item {
   opacity: 1;
   margin-top: 0;
+  margin-bottom: 0;
   transition: 1s linear;
 }
-.hide-item {
+.ref.hide-item {
+  --length: 6px;
   opacity: 0;
-  margin-top: 6px;
+  margin-top: calc(var(--length)*-1);
+  margin-bottom: var(--length);
 }
 
 

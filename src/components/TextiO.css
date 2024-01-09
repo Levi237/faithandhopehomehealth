@@ -1,11 +1,14 @@
 .text-io {
     opacity: 1;
-    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
     transition: 2s ease;
   }
   .text-io.hide-item {
+    --length: 6px;
     opacity: 0;
-    margin-top: 6px;
+    margin-left: calc(var(--length)*-1);
+    margin-right: var(--length);
   }
   .text-io:nth-of-type(2) {
     transition-delay: .8s;

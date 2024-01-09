@@ -17,7 +17,7 @@ const Info = () => {
     }, []);
 
     return(
-        <section ref={ref} className="page-width hide-item see-item">
+        <section ref={ref} className="page-width ref hide-item see-item">
             <br/><br/><br/><br/>
             <div>
                 <h3>HOW TO ACCESS OUR SERVICES:</h3>

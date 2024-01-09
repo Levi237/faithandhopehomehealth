@@ -1,5 +1,5 @@
 import React            from 'react';
-import TextIo           from '../../components/TextIo';
+// import TextIo           from '../../components/TextIo';
 
 const Locations = () => {
 
