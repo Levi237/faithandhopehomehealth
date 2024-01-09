@@ -1,0 +1,79 @@
+/* Home Hero Style */
+.hero-section {
+    /* height: calc(100dvh - 83px); */
+    max-height: calc(768px - 83px);
+    overflow: hidden;
+}
+.hero-section > div,
+.hero-section > div > section ,
+.hero-section > div > section > div  { 
+    height: 100%;
+    position: relative;
+}
+
+.hero-section img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+.hero-section h1 {
+    font-size: 5vw;
+}
+.hero-section h4 {
+    font-size: 2.5vw;
+    font-weight: 400;
+}
+.hero-section .text-io {
+    font-size: 2vw;
+    font-weight: 300;
+}
+.home-page .hero-info {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    max-height: calc(768px - 83px);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.home-page > section > div + div {
+    margin-top: 40px;
+}
+
+.services-page .hero-info {
+    position: absolute;
+    height: 100%;
+    max-height: calc(768px - 83px);
+    width: 50%;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-info .spacer {
+    height: 10vw;
+    max-height: 80px;
+}
+.hero-info > div {
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 740px){
+    .hero-section h1 {
+        font-size: 7vw;
+    }
+    .hero-section h4 {
+        font-size: 3.5vw;
+        font-weight: 400;
+    }
+    .hero-section .text-io {
+        font-size: 3vw;
+        font-weight: 300;
+    }
+}

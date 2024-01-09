@@ -7,7 +7,8 @@ const Hero = () => {
             <div>
                 <section>
                     <div>
-                        <img src="care-at-home-services-hero.jpg" alt="At home care, nurse with elderly woman in wheelchair"/>
+                        
+                    <img src="assisting-care.png" alt="At home care, nurse with elderly woman in wheelchair"/>
                         <div className="hero-info">
                             <div>
                                 <h1>Faith & Hope </h1>
