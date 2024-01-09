@@ -5,7 +5,7 @@ import Services                 from './Services';
 import Hero                     from './Hero';
 import Intro                    from './Intro';
 import Assessments              from './Assessments';
-
+import Locations                 from './Locations';
 export default class HomePage extends Component {
     render(){
         return (
@@ -14,6 +14,7 @@ export default class HomePage extends Component {
                 <Intro />
                 <Assessments />
                 <Services scrollToTop={this.props.scrollToTop} />
+                <Locations />
             </div>
         );
     };

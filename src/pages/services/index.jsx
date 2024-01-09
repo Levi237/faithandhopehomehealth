@@ -12,6 +12,7 @@ export default class ServicesPage extends Component {
                 <Hero />
                 <div className="home-page page-wrapper">
                     <Info />
+                    <br/><br/>
                     <DiscriminationClause />
                 </div>
             </div>

@@ -4,20 +4,19 @@ import React            from 'react';
 const DiscriminationClause = () => {
 
     return(
-        <div className="page-width" style={{width: '100%', display: 'flex', margin: '80px auto'}}>
-                        <section style={{flexGrow: '1'}}>
-                
+        <div className="discrimination-clause page-width" style={{}}>
+                        <section style={{}}>
                 </section>
-            <section style={{maxWidth: '360px', width: '100%'}}>
-                <div style={{display: 'flex', gap: '16px'}}>
+            <section style={{}}>
+                <div className="container" style={{}}>
+                    <section className="title">
+                        <h3>JOINT COMMISSION</h3>
+                        <h3>INTERNATIONAL</h3>
+                        <h3>QUALITY APPROVAL</h3>
+                    </section>
                     <section>
-                <h3>JOINT COMMISSION</h3>
-                <h3>INTERNATIONAL</h3>
-                <h3>QUALITY APPROVAL</h3>
-                </section>
-                <section>
-                    <img src="JCIQA.png" alt="Joint Commission International Quality Approval"/>
-                </section>
+                        <img src="JCIQA.png" alt="Joint Commission International Quality Approval"/>
+                    </section>
                 </div>
                 <p style={{textAlign: 'justify'}}>
                     Pursuant Title VI of the Civil Right Act of 1964,

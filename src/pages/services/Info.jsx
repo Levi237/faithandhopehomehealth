@@ -36,6 +36,7 @@ const Info = () => {
                     for admission and start of services.
                 </p>
             </div>
+            <br/><br/><br/><br/>
             <div className="grid two-col mobile-one-col">
                 <section>
                     <img src="laboratory-supplies.png" alt="Pitri dish and dropper held up with blue liquid" />
@@ -55,8 +56,9 @@ const Info = () => {
                     </p>
                 </section>
             </div>
+            <br/><br/>
             <div className="top-image">
-                    <img src="assisting-care.png" alt="Nurse assisting elderly woman standing up from couch to get to her walker." />
+                    <img className="mobile-only" src="senior-man-nursing-home-smiling-nurse-while-she-s-giving-him-pills.jpg"  alt="Nurse assisting elderly woman standing up from couch to get to her walker." />
                 </div>
             <div className="bullet-points-section">
                 <div className="box-info">
@@ -112,7 +114,10 @@ const Info = () => {
                     </section>
                 </div>
                 <div className="box-image">
-                    <img src="assisting-care.png" alt="Nurse assisting elderly woman standing up from couch to get to her walker." />
+                {/* <img src="senior-man-nursing-home-smiling-nurse-while-she-s-giving-him-pills.jpg" alt="At home care, nurse with elderly woman in wheelchair"/> */}
+                    <img src="senior-man-nursing-home-smiling-nurse-while-she-s-giving-him-pills.jpg" alt="At home care, nurse with elderly woman in wheelchair"/>
+                
+                    {/* <img src="assisting-care.png" alt="Nurse assisting elderly woman standing up from couch to get to her walker." /> */}
                 </div>
                 <div className="box-info">
                     <section>
