@@ -40,7 +40,7 @@ const Services = ({scrollToTop}) => {
                 </section>
             </div>
             <div className="button-box">
-                <Link className="button" to={routes.SERV} onClick={() => {scrollToTop()}}>Learn More</Link>
+                <Link className="button" to={routes.SERV} onClick={() => {scrollToTop()}}>Services We Provide</Link>
             </div>
         </section>
     );

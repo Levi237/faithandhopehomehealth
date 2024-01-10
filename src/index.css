@@ -49,7 +49,7 @@ h2 {
   font-weight: 600;
 }
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: var(--font-fancy);
 }
 h4 {
@@ -77,15 +77,16 @@ img {
 
 a {
   text-decoration: none;
+  color: var(--color-hex-grey);
   cursor: pointer;
   border-bottom: 1px solid #FFFFFF;
 }
 a:visited {
-  color: var(--color-hex-darkgrey);
-  border-bottom: 1px solid var(--color-hex-darkgrey);
+  color: var(--color-hex-lightgrey);
+  border-bottom: 1px solid var(--color-hex-grey);
 }
 a:hover {
-  color: var(--color-hex-grey);
+  color: var(--color-hex-theme-light);
   border-bottom: 1px solid var(--color-hex-theme-light);
 }
 
@@ -182,7 +183,6 @@ footer {
   background-image: linear-gradient(180deg, var(--color-hex-theme-dark), var(--color-hex-theme-dark));
   color: #FFF;
   padding: 40px!important;
-  margin-top: 40px;
   font-size: 18px;
   font-weight: 300;
 }
@@ -218,11 +218,7 @@ button:hover.active,
 box-shadow: 4px 4px 4px rgba(36,36,36,.5);
 }
 
-ul.ul-two-col {
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
-}
+
 
 /* Grid template */
 .grid {
@@ -253,8 +249,16 @@ ul.ul-two-col {
 .grid.two-col .right { grid-area: right; }
 
 @media (min-width: 740px){
+
+  ul.ul-two-col {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+
   .grid.two-col {
     grid-template-areas: 'left right';
+    
   }  
 
   
@@ -340,13 +344,37 @@ button {
   line-height: 120%;
 }
 
+
+
+.services-list-section {
+padding: 80px 0!important;
+background-image: linear-gradient(0deg, #003287 0%, #4170B6 100%);
+}
 .section-container {
   --padding: 60px;
-  width: calc(var(--page-width));
+  width: calc(var(--page-width) + var(--padding)*2);
   padding: var(--padding);
   max-width: calc(100% - var(--padding)*2);
   margin: 0 auto;
-  background-image: linear-gradient(0deg, #003287 0%, #4170B6 100%);
+  background-color: #FFF;
+}
+
+.jciqa {
+  grid-template-columns: 1fr 300px;
+}
+
+.jciqa > div:last-of-type {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.section-container h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.section-container ul,
+.section-container li {
+font-size: 1.25rem;
 }
 @media (max-width: 739px){
   .section-container {
@@ -358,9 +386,17 @@ button {
     gap: 0;
 
   }
+  .jciqa {
+    grid-template-columns: 1fr;
+    gap: 64px!important;
+  }
   .section-container .grid ul {
     padding-bottom: 0;
   }
+  .section-container ul,
+.section-container li {
+font-size: 1rem;
+}
 }
 
 

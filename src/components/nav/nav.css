@@ -25,11 +25,16 @@
 #nav-menu a {
     display: block;
     min-width: 320px;
-    /* font-size: 18px; */
-    margin-bottom: 20px;
+    font-size: 24px;
+    color: var(--color-hex-grey);
+}
+#nav-menu a + a {
+  margin-top: 40px;
+
 }
 #nav-menu a.active{
     text-decoration: underline;
+    color: var(--color-hex-theme-dark);
 }
 #nav-menu > div {
     width: 100%;

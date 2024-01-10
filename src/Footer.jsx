@@ -41,19 +41,17 @@ const Footer = () => {
                 </section>
                 <section className="center">
                     <center>
-                    <div data-contact-info="hours">
-                        <section><h2>Hours of Operation</h2></section>
-                        <section>
-                        9:00am - 5:00pm
-                        </section>
-                    </div>
-                    <br/>
+
+
                     <div data-contact-info="oncall">
+                    <section><h1>818.290.3768</h1></section>
+                    <br/>
                         <section><h2>Available <span style={{style: 'inline-block'}}>On-Call</span></h2></section>
                         <section>
                         24 hours a day&emsp;|&emsp;7 days a week
                         </section>
-                    </div></center>
+                    </div>
+                    </center>
                 </section>
                 <section className="right">
 
