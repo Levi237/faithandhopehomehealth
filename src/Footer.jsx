@@ -1,5 +1,7 @@
 import React from 'react';
 
+import DescriminiationClause  from '../src/components/DiscriminationClause';
+
 const Footer = () => {
     return(
         <footer>
@@ -54,7 +56,7 @@ const Footer = () => {
                     </center>
                 </section>
                 <section className="right">
-
+<DescriminiationClause/>
                 </section>
             </div>
         </footer>

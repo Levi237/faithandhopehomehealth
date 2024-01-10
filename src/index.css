@@ -191,7 +191,11 @@ footer h3 {
   font-weight: 500;
   margin: 16px 0 4px;
 }
-
+footer .grid.three-col .right {
+  justify-content: end;
+    align-items: end;
+    display: flex;
+}
 
 /* Page Style */
 .page-wrapper {

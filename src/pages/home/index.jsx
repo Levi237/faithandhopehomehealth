@@ -6,7 +6,6 @@ import '../pages.css';
 import Hero                     from '../../components/Hero';
 import InfoGrid                 from '../../components/InfoGrid';
 
-
 export default class HomePage extends Component {
     state = {
         content: [``],
@@ -68,9 +67,8 @@ export default class HomePage extends Component {
                 <div className="button-box">
                     <Link className="button" to={routes.SERV} onClick={() => {this.props.scrollToTop()}}>Services We Provide</Link>
                 </div>
-                <br/><br/>
+                <br/><br/><br/><br/><br/><br/>
                 </center>
-
             </div>
         );
     };
