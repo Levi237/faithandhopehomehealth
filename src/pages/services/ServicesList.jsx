@@ -1,9 +1,10 @@
 import React            from 'react';
-// import TextIo           from '../../components/TextIo';
+
+import styled from 'styled-components';
 const ServicesList = () => {
 
     return(
-        <section className="services-list-section">               
+        <Wrapper className="services-list-section">               
             <div className="section-container">
                 <h2>What services do we provide?</h2>
                 {/* <h5>[ INCLUDE BUT ARE NOT LIMITED TO ]</h5> */}
@@ -29,31 +30,21 @@ const ServicesList = () => {
                         <div>
 
 
-                        <div>
-
+                        <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'flx-end'}}>
+<img src="assisting-elderly-woman-with-crutches.jpg" />
+<section style={{flexGrow: '1'}}></section>
             <section style={{}}>
-                <div>
-                <div className="container" style={{maxWidth: '300px', display: 'flex'}}>
-                    <section className="title">
-                        <h3><small>JOINT COMMISSION</small></h3>
-                        <h3><small>INTERNATIONAL</small></h3>
-                        <h3><small>QUALITY APPROVAL</small></h3>
-                    </section>
-                    <section>
-                        <img src="JCIQA.png" alt="Joint Commission International Quality Approval"/>
-                    </section>
-                </div>
-                {/* <p style={{textAlign: 'justify', lineHeight: '150%',maxWidth: '300px'}}>
-                    <small>
-                    Pursuant Title VI of the Civil Right Act of 1964,
-                    Section 504 of the Rehabilitation Act of 1973,
-                    and the Age Discrimination Act of 1975,
-                    Faith & Hope Home Health Care, Inc. does not
-                    discriminate ni the employment of staff or provision
-                    of service on the basis of race, color, genetics,
-                    handicap, age, religious or sexual preferences.
-                    </small>
-                </p> */}
+                <div style={{display: 'flex', alignItems: 'flex-end', justifyContent: 'flex-end'}}>
+                    <div className="container" style={{maxWidth: '300px', display: 'flex'}}>
+                        <section className="title">
+                            <h3><small>JOINT COMMISSION</small></h3>
+                            <h3><small>INTERNATIONAL</small></h3>
+                            <h3><small>QUALITY APPROVAL</small></h3>
+                        </section>
+                        <section>
+                            <img src="JCIQA.png" alt="Joint Commission International Quality Approval"/>
+                        </section>
+                    </div>
                 </div>
             </section>
 
@@ -62,8 +53,22 @@ const ServicesList = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </Wrapper>
     );
 };
+
+const Wrapper = styled.div`
+img {
+    max-width: 80%;
+    margin-left: 20%;
+}
+@media (max-width: 739px){
+    img {
+        max-width: 100%;
+        margin-left: 0%;
+        margin-bottom: 80px;
+    }
+}
+`;
 
 export default ServicesList;
