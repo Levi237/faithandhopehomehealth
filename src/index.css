@@ -57,10 +57,14 @@ h4 {
 }
 p,ul,li {
   font-size: 1rem;
+  color: var(--color-hex-grey);
 }
 p, ul {
   padding-bottom: 1rem;
   line-height: 200%;
+}
+ul {
+  list-style-type: '➕ ';
 }
 * > *:last-child {
   padding-bottom: 0;
@@ -116,6 +120,11 @@ header > section {
 }
 .header-left {
   grid-area: left;
+}
+.header-left a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: none!important;
 }
 .header-mid {
   grid-area: center;

@@ -1,4 +1,5 @@
 import React            from 'react';
+import TextIo from '../../components/TextIo';
 
 import styled from 'styled-components';
 const ServicesList = () => {
@@ -6,19 +7,18 @@ const ServicesList = () => {
     return(
         <Wrapper className="services-list-section">               
             <div className="section-container">
-                <h2>What services do we provide?</h2>
-                {/* <h5>[ INCLUDE BUT ARE NOT LIMITED TO ]</h5> */}
+                <TextIo><h2>What services do we provide?</h2></TextIo>
                 <br/>
                 <div className="">
                     <div className="grid two-col mobile-one-col jciqa">
                         <div>
                             <ul className="ul-two-colHIDE">
                                 <li>Registered Nursing</li>
-                                <li>Licensed Professional Nursing</li>
+                                <li>Licensed Vocational Nursing</li>
+                                <li>Certified Home Health Aides</li>
                                 <li>Physical Therapy</li>
                                 <li>Speech Therapy</li>
                                 <li>Occupational Therapy</li>
-                                <li>Certified Home Health Aides</li>
                                 <li>Medical Social Work</li>
                                 <li>Speciality services, such as infusion</li>
                                 <li>Post Surgical Care</li>

@@ -6,7 +6,6 @@
     width: 50%;
     max-height: calc(768px - 83px);
     top: 0;
-    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,13 +46,12 @@
 .home-page > section > div + div {
     margin-top: 40px;
 }
+
 .home-page .hero-info {
-    left: 0;
+    left: 0!important;
 }
-
-
 .services-page .hero-info {
-    right: 0;
+    right: 0!important;
 }
 .hero-info .spacer {
     height: 10vw;

@@ -28,7 +28,7 @@ export default class HomePage extends Component {
         },{
             img: 'stethoscope.png',
             title: 'What do we do?',
-            body: `We provide a full array of medical services to homebound patients under Physicians' orders.`
+            body: `We provide a full array of medical services to homebound patients under Physicians orders.`
         },{
             img: 'heart-location.png',
             title: 'Where do we go?',
@@ -50,6 +50,8 @@ export default class HomePage extends Component {
                 <Hero content={content} image={image} />
                 <div className="contact-section-container">
                 <div className="contact-section">
+                    <h2>Available 24/7</h2>
+                    <div>
                     <section>
                     <a href="tel:1-818-290-3768" target="_blank" rel="noopener noreferrer"><h3>818.290.3768</h3></a>
                     </section>
@@ -59,6 +61,7 @@ export default class HomePage extends Component {
                     <section>
                     <a href="mailto:fhhhealth@gmail.com" target="_blank" rel="noopener noreferrer"><h3>fhhhealth@gmail.com</h3></a>
                     </section>
+                    </div>
                 </div>
                 </div>
                 <InfoGrid info={info} />
