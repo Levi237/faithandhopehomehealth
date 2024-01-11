@@ -45,7 +45,7 @@ export default class HomePage extends Component {
     }
     render(){
         const { content, image, info } = this.state;
-        const { scrollToTop } = this.props
+        const { scrollToTop } = this.props;
         return (
             <div className="home-page page-wrapper">
                 <Hero content={content} image={image} />
