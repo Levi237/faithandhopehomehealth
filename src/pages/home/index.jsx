@@ -45,30 +45,31 @@ export default class HomePage extends Component {
     }
     render(){
         const { content, image, info } = this.state;
+        const { scrollToTop } = this.props
         return (
             <div className="home-page page-wrapper">
                 <Hero content={content} image={image} />
                 <div className="contact-section-container">
-                <div className="contact-section">
-                    <h2>Available 24/7</h2>
-                    <div>
-                    <section>
-                    <a href="tel:1-818-290-3768" target="_blank" rel="noopener noreferrer"><h3>818.290.3768</h3></a>
-                    </section>
-                    <section className="button-box">
-                        <Link className="button" to={routes.SERV} onClick={() => {this.props.scrollToTop()}}>Services We Provide</Link>
-                    </section>
-                    <section>
-                    <a href="mailto:fhhhealth@gmail.com" target="_blank" rel="noopener noreferrer"><h3>fhhhealth@gmail.com</h3></a>
-                    </section>
+                    <div className="contact-section">
+                        <h2>Available 24/7</h2>
+                        <div>
+                        <section>
+                        <a href="tel:1-818-290-3768" target="_blank" rel="noopener noreferrer"><h3>818.290.3768</h3></a>
+                        </section>
+                        <section className="button-box">
+                            <Link className="button" to={routes.SERV} onClick={() => {scrollToTop()}}>Services We Provide</Link>
+                        </section>
+                        <section>
+                        <a href="mailto:fhhhealth@gmail.com" target="_blank" rel="noopener noreferrer"><h3>fhhhealth@gmail.com</h3></a>
+                        </section>
+                        </div>
                     </div>
-                </div>
                 </div>
                 <InfoGrid info={info} />
                 <center>
-                    <br/><br/>
+                <br/><br/>
                 <div className="button-box">
-                    <Link className="button" to={routes.SERV} onClick={() => {this.props.scrollToTop()}}>Services We Provide</Link>
+                    <Link className="button" to={routes.SERV} onClick={() => {scrollToTop()}}>Services We Provide</Link>
                 </div>
                 <br/><br/><br/><br/><br/><br/>
                 </center>

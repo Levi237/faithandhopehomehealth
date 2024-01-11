@@ -15,15 +15,14 @@ export default class App extends Component {
   scrollToTop = () => {
     //=> add to onClick / NavLink to scroll to top of window while changing components viewed
     const top = document.getElementById('scroll-to-bar');
-    top.scrollIntoView({behavior: 'smooth'});
+    top.scrollIntoView(true);
   };
 
   render (){
     return (
       <>
-      <section id="scroll-to-bar" style={{  width: '100vw',
-  height: '0'}}></section>
         <Header />
+      <section id="scroll-to-bar" style={{  width: '100vw', height: '0px'}}></section>
 
         <Routes>
           <Route path={routes.HOME} exact element={<>
@@ -44,4 +43,4 @@ export default class App extends Component {
       </>
     );
   };
-};
+};   
